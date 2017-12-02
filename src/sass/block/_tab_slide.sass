@@ -1,0 +1,421 @@
+.tab_slide
+	&__box
+		@extend .flex-center-hide
+		position: relative
+	&__click
+		@media(max-width:1151px)
+			display: none
+		ul
+			@extend .flex-start
+			max-width: $span*9+$gutter*6
+			padding: 0
+			margin-bottom: 0
+			li
+				border-top: 8px solid transparent
+				float: left
+				padding: 18px $gutter*0.6
+				list-style: none
+				display: block
+				cursor: pointer
+				color: $color1
+				font-family: Montserrat	
+				font-size: 18px
+				font-weight: bold
+				letter-spacing: 1px
+				line-height: 22px
+				
+				&.active
+					border-top: 8px solid $color1
+					background: #fff
+					
+	&__search
+			@extend .flex-center-hide
+			padding-top: 24px
+			padding-right: 5px
+			@media(max-width:1151px)
+				position: absolute
+				right: 0
+				top: -62px
+			input[type='search']
+				border: 0
+				border-bottom: 1px solid #e5e5e5
+				background: transparent
+				padding-top: 5px
+				@media(max-width:760px)
+					position: relative
+					z-index: 99
+					&:focus
+						background: #fff
+			.click-search
+					position: relative
+					margin-left: -20px
+					border: 0
+					background: transparent
+					background-image: url(../img/ic_zoom_in_24px.svg);
+					background-repeat: no-repeat
+					background-position: center
+					width: 18px
+					height: 18px
+	.lock
+		display: block
+		margin-left: 54px
+		margin-bottom: 2px
+		width: 16px
+		height: 21px
+		background-position: center
+		background-repeat: no-repeat
+		background-image: url(../img/ic_lock_outline_24px.svg)
+		@media(max-width:760px)
+			margin-left: 5px
+	&__info-link
+		position: relative
+		display: none
+		&.active
+			display: block
+	&__img-info
+		position: relative
+		//margin-top: 10px
+		&:after
+			content: ''
+			display: table
+			clear: both
+		.pictures
+			margin: 0
+			@media(max-width:760px)
+				height: 362px
+				object-fit: cover
+	&__breadcrumbs
+		@extend .flex-start
+		width: 100%
+		position: absolute
+		top: 0
+		margin-top: 18px
+		margin-left: 40px
+		z-index: 2
+		a
+			color: #FFFFFF
+			font-family: $sour
+			font-size: 16px
+			letter-spacing: 1px
+			line-height: 22px
+			text-decoration: none
+			&:after
+				width: 12px
+				height: 8px
+				font-family: $mont
+				content: '>'
+				font-size: 26px
+				display: block
+				float: right
+				margin-left: 33px
+				margin-right: 33px
+			&:last-child
+				&:after
+					display: none
+.inside_tabs
+	position: absolute
+	@extend .flex-hight
+	width: 100%
+	padding: 0 13px
+	box-sizing: border-box
+	margin-top: -40px
+	
+	&:after
+		@extend .fix
+	li
+		border-radius: 2px
+		max-width: 262px
+		background: #fff
+		list-style: none
+		@extend .flex-center-hide
+		box-shadow: 0 2px 2px 0 rgba(128,130,139,0.2)
+		order: 1
+		
+		p
+			width: 100%
+			//padding: 16px 45px 18px 32px
+			padding: 16px 120px 18px 35px
+			margin: 0
+			display: block
+			text-decoration: none
+			color: $color1
+			font-family: $mont
+			font-size: 18px
+			font-weight: bold
+			line-height: 20px
+			@extend .flex-nowrap
+			position: relative
+			cursor: pointer
+			min-height: 40px
+			svg
+				position: absolute
+				right: 40px
+				margin-left: 10px
+				top: 30%
+		&.active
+			@extend .flex-center
+			
+			.oval
+				border: 1px solid #0071BC
+				svg
+					display: block
+					path
+						fill: #000
+			p
+				color: #000
+			svg
+					path
+						fill: #000
+		@media(max-width:760px)
+			display: none
+			height: 74px
+			&.active
+				display: -webkit-box !important
+				display: -moz-box !important
+				display: -ms-flexbox !important
+				display: -webkit-flex !important
+				display: flex !important
+				order: 0
+			.oval
+				width: 40px
+				margin-top: 15px
+				height: 40px
+				border: 1px solid transparent
+				border-radius: 25px
+				cursor: pointer
+				position: absolute
+				right: 20px
+				svg
+					margin: 0 auto
+					margin-left: 15px
+					margin-top: 10px
+					display: none
+					transform: rotate(90deg)
+					path
+						fill: transparent
+			
+		@media(min-width:760px)
+			.oval
+				display: none
+		img
+			width: 20px
+			height: 20px
+			margin-right: 0px
+			padding-left: 10px
+			float: right
+		@media(max-width:1151px)
+			max-width: 182px
+			p
+				padding: 16px 45px 18px 32px
+				font-size: 16px
+				svg
+					right: 18px
+	@media(max-width:760px)
+		display: -webkit-box
+		display: -moz-box
+		display: -ms-flexbox
+		display: -webkit-flex
+		display: flex
+		-webkit-box-direction: normal
+		-moz-box-direction: normal
+		-webkit-box-orient: vertical
+		-moz-box-orient: vertical
+		-webkit-flex-direction: column
+		-ms-flex-direction: column
+		flex-direction: column
+		li
+			max-width: 100%
+			p
+				width: 55%
+				margin: 0 auto
+				svg
+					right: 34px
+			
+
+	&_info
+		margin-top: 94px
+		display: none
+		&.active
+			display: block
+		&__box
+			border-bottom: 1px solid #E5E5E5
+			padding-bottom: 21px
+			.container
+				@extend .flex-start
+				webkit-flex-wrap: nowrap !important
+				flex-wrap: nowrap !important
+			h1
+				color: #37383E
+				font-family: $mont
+				font-size: 32px
+				font-weight: bold
+				line-height: 36px
+				margin-left: 9px
+				margin-right: 20px
+			h2
+				color: #37383E
+				max-width: 268px
+				font-family: $mont
+				font-size: 24px
+				font-weight: bold
+				line-height: 28px
+				margin-left: 9px
+				margin-right: 20px
+				margin-top: 72px
+				@media(max-width:1151px)
+					max-width: 100%
+					margin-top: 0
+				@media(max-width:760px)
+					margin-top: 26px
+			.text-block
+				padding-left: 20px
+				@media(max-width:760px)
+					padding-left: 0
+				&_content
+					@media(max-width:1151px)
+						margin-left: 65px
+						box-sizing: border-box
+					@media(max-width:760px)
+						margin-left: 0
+				&:nth-child(3)
+					padding-left: 22px
+					margin-left: 41px
+					border-left: 1px solid #E5E5E5
+					@media(max-width:1151px)
+						margin-left: 0
+						border: 0
+				p
+					font-family: $sour
+					margin: 0 0 0 10px
+					strong
+						font-weight: bold
+						font-size: 18px
+				h3
+					font-size: 24px
+					font-weight: bold
+					font-family: $mont
+					margin-top: 16px
+					margin-bottom: 15px
+				div
+					color: #37383E
+					font-size: $sour
+					font-size: 18px
+					line-height: normal
+				span
+					font-family: $mont
+					font-size: 72px
+					color: $color1
+					font-weight: 900
+					@media(max-width:1151px)
+						float: left
+					@media(max-width:760px)
+						float: none
+				&_list
+					padding-left: 30px
+					padding-top: 10px
+					li
+						list-style: none
+						font-family: $sour
+						font-size: 16px
+						margin-bottom: 20px
+						position: relative
+						&:before
+							position: absolute
+							opacity: .3
+							margin-left: -25px
+							top: -20px
+							font-size: 30px
+							font-weight: 400
+							content: '_'
+							color: $color1
+							display: block
+							float: left
+				&_box
+					@extend .flex-hight
+					margin-left: 0
+					padding-left: 0
+					li
+						position: relative
+						max-width: 273px
+						background: #fff
+						border-radius: 4px
+						display: block
+						box-sizing: border-box
+						padding: 24px
+						padding-bottom: 32px
+						margin: 5px
+						font-family: $sour
+						font-size: 16px
+						color: #37383e
+						box-shadow: 0 2px 1px 0 rgba(24,67,85,0.15)
+						@media(max-width:1151px)
+							max-width: 360px
+						.namber
+							font-family: $mont
+							font-size: 72px
+							font-weight: bold
+							position: absolute
+							right: 15px
+							bottom: -10px
+							opacity: .2
+						&:nth-child(7)
+							max-width: 256px*2.18
+							@media(max-width:1151px)
+								max-width: 100%
+						@media(max-width:760px)
+							max-width: 95% !important
+					&.link
+						li
+							max-width: 400px
+							margin: 3px
+							color: $color1
+							position: relative
+							border-top: 8px solid transparent
+							padding-bottom: 30px
+							@extend .flex-col
+							@media(max-width:1151px)
+								max-width: 48%
+							@media(max-width:760px)
+								max-width: 100%
+								margin-bottom: 15px
+							&:hover
+								border-top: 8px solid $color1
+								box-shadow: 0 15px 33px 0 rgba(0,113,188,0.18)
+								border-radius: 0
+								cursor: auto
+						.download
+							@extend .flex-center-center
+							margin-top: 30px
+							width: 100%
+							&_click
+								border-radius: 6px
+								border: 1px solid #00718c
+								padding: 9px 57px 11px 32px
+								background-image: url(../img/arr.svg)
+								background-repeat: no-repeat
+								background-position: 90% center
+								color: $color1
+								text-decoration: none
+								&:hover
+									color: #fff
+									background: $color1
+									cursor: pointer
+							&_text
+								margin-left: 23px
+								text-transform: uppercase
+								font-size: 12px
+								font-family: $sour
+								color: #37383E
+			.title
+				width: 100%
+				font-size: 63px
+				font-family: $mont
+				text-align: center
+				font-weight: 900
+				color: #0054A6
+				opacity: 0.2
+				text-transform: uppercase
+				padding-top: 40px
+				margin-bottom: 15px
+				@media(max-width:1151px)
+					font-size: 38px

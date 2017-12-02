@@ -1,0 +1,190 @@
+.footer
+	background-image: url(../img/bg-footer.jpg)
+	padding: 32px 0
+	@extend .flex-center-center
+	.link_next
+			background: #fff
+			padding: 26px 80px 25px 32px
+			margin: 0 auto
+			display: block
+			position: relative
+			font-family: $mont
+			font-size: 18px
+			font-weight: 800
+			color: #0054a6
+			text-decoration: none
+			@extend .flex-center-hide
+			svg
+				position: absolute
+				right: 10px
+				top: 35%
+			&:hover
+				color: #000
+				svg
+					path
+						fill:#000
+			&:after
+				content: ''
+				position: absolute
+				right: -64px
+				top: 0
+				border: 36px solid transparent
+				border-left: 28px solid #fff
+footer
+	.text-block
+		@extend .flex-hight
+		@media(max-width:760px)
+			margin-left: 0
+			padding-left: 0
+		li
+			max-width: 170px
+			list-style: none
+			text-align: center
+			border-radius: 8px
+			padding: 5px 5px
+			font-size: 14px
+			font-family: $sour
+			@media(max-width:1151px)
+				max-width: 171px
+				padding: 5px 25px
+			@media(max-width:760px)
+				padding: 5px
+				max-width: 145px
+			&:hover
+				box-shadow: 0 15px 33px 0 rgba(0,113,188,0.18)
+				background: #fff
+				cursor: pointer
+				color: $color1
+			img
+				width: auto
+				//margin: 0 auto
+	.content
+		@extend .flex-hight
+		border-top: 1px solid #e5e5e5
+		font-family: $sour
+		font-size: 16px
+		line-height: 24px
+		color: #37383E
+		padding-bottom: 30px
+		position: relative
+		div
+			@media(max-width:760px)
+				text-align: center
+				width: 100%
+			img
+				width: auto
+				margin: 5px
+			.stop
+				@extend .flex-hight
+				-webkit-box-align: center
+				-moz-box-align: center
+				-webkit-align-items: center
+				-ms-flex-align: center
+				align-items: center
+				@media(max-width:760px)
+					position: absolute
+					bottom: 140px
+					//margin: 0 auto
+					width: 100%
+					display: -webkit-box
+					display: -moz-box
+					display: -ms-flexbox
+					display: -webkit-flex
+					display: flex
+					-webkit-box-direction: normal
+					-moz-box-direction: normal
+					-webkit-box-orient: vertical
+					-moz-box-orient: vertical
+					-webkit-flex-direction: column
+					-ms-flex-direction: column
+					flex-direction: column
+					img
+						margin: 0 auto
+						
+			button
+				border: 0
+				border-radius: 4px
+				margin-top: 25px
+				&.click
+					max-width: 193px
+					text-align: left
+					border-radius: 4px
+					background: $color1
+					position: relative
+					padding: 12px 18px 14px 53px
+					border: 0
+					color: #fff
+					font-weight: bold
+					font-family: $sour
+					img
+						position: absolute
+						left: 10px
+				&#modal
+					max-width: 133px
+					border: 1px solid #CED0D7
+					margin-left: 26px
+					color: $color1
+					padding: 11px 13px 15px 26px
+					text-shadow: 0 1px 0 0 rgba(255,255,255,0.5)
+					text-align: left
+					border: 1px solid #CED0D7
+					background: transparent
+			&:last-child
+				@media(max-width:1151px)
+					width: 100%
+					display: -webkit-box
+					display: -moz-box
+					display: -ms-flexbox
+					display: -webkit-flex
+					display: flex
+					-webkit-box-direction: normal
+					-moz-box-direction: normal
+					-webkit-box-orient: horizontal
+					-moz-box-orient: horizontal
+					-webkit-flex-direction: row
+					-ms-flex-direction: row
+					flex-direction: row
+					-webkit-flex-wrap: nowrap
+					-ms-flex-wrap: nowrap
+					flex-wrap: nowrap
+					-webkit-box-pack: end
+					-moz-box-pack: end
+					-webkit-justify-content: flex-end
+					-ms-flex-pack: end
+					justify-content: flex-end
+					-webkit-align-content: stretch
+					-ms-flex-line-pack: stretch
+					align-content: stretch
+					-webkit-box-align: start
+					-moz-box-align: start
+					-webkit-align-items: flex-start
+					-ms-flex-align: start
+					align-items: flex-start
+					button
+						&.click
+							max-width: 280px
+						&#modal
+							max-width: 220px
+					@media(max-width:760px)
+						display: -webkit-box
+						display: -moz-box
+						display: -ms-flexbox
+						display: -webkit-flex
+						display: flex
+						-webkit-box-direction: normal
+						-moz-box-direction: normal
+						-webkit-box-orient: vertical
+						-moz-box-orient: vertical
+						-webkit-flex-direction: column
+						-ms-flex-direction: column
+						flex-direction: column
+						button
+							box-sizing: border-box
+							margin: 20px auto
+							display: block
+							&.click
+								max-width: 100%
+								margin-top: 80px
+							&#modal
+								max-width: 100%
+								margin: 0 auto

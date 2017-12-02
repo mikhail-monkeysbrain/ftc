@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800,900|Source+Sans+Pro:300,300i,400,600,700,900&subset=cyrillic')
+/******Шрифты*********/
+$mont: 'Montserrat', sans-serif
+$sour: 'Source Sans Pro', sans-serif 
+
+body
+	background: #f3f3f8
+	font-size: $mont
+.middle
+	max-width: 1141px
+	margin: 0 auto
+	//background: #c9c9c9
+	@media(max-width:1151px)
+		max-width: 760px
+	@media(max-width:760px)
+		max-width: 80%
+		min-width: 320px
+
+img,
+iframe 
+	width: 100%
+	margin: auto
+	display: block
+	margin-top: 1rem
+	margin-bottom: 1rem
+
+
+
+
+$color1: #0054A6
+//grid-mixin
+/*****--1span==1столбец--******/
+$span: 64px * 1
+/*****--1gutter==1средняк--******/
+$gutter: 32px
+//grid-mixin
+=ml($ml)
+	margin-left:  $ml
+=mr($mr)
+	margin-right: $mr

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="20px" viewBox="0 0 14 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_add_location_24px</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.8">
+        <g id="assets" transform="translate(-345.000000, -1145.000000)">
+            <g id="ic_add_location_24px" transform="translate(340.000000, 1143.000000)">
+                <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                <path d="M12,21.2395092 C12.215687,20.9874435 12.452479,20.7037307 12.705521,20.3919468 C13.5171158,19.391946 14.3287766,18.3106978 15.0855178,17.1890993 C16.0812106,15.7133403 16.9044725,14.280585 17.4963181,12.9373069 C18.1511712,11.4510244 18.5,10.1229832 18.5,9 C18.5,5.41614237 15.5838576,2.5 12,2.5 C8.41614237,2.5 5.5,5.41614237 5.5,9 C5.5,10.1229832 5.84882884,11.4510244 6.50368188,12.9373069 C7.09552746,14.280585 7.91878936,15.7133403 8.91448222,17.1890993 C9.67122337,18.3106978 10.4828842,19.391946 11.294479,20.3919468 C11.547521,20.7037307 11.784313,20.9874435 12,21.2395092 Z" id="Shape" stroke="#0071BC"></path>
+            </g>
+        </g>
+    </g>
+</svg>

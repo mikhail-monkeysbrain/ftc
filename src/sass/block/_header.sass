@@ -1,0 +1,111 @@
+header
+	.middle
+		@extend .flex-center
+		padding-top: 12px
+		position: relative
+	.menu__link
+		width: 18px
+		height: 12px
+		display: block
+		position: absolute
+		margin-left: -40px
+		@media(max-width:1151px)
+			position: relative
+			margin-left: 0
+			margin-right: 10px
+		@media(max-width:760px)
+			margin-right: 60px
+	#menu
+		display: none
+	.bitmap
+		height: 50px
+		width: 175px
+		display: block
+		min-width: $span*2+$gutter*1
+		margin: 4px 0 0
+	.div-middle
+		width: $span*6+$gutter*6
+		@extend .flex-center
+		position: relative
+		&:after
+			content: ''
+			border-top: 1px solid #E5E5E5
+			position: absolute
+			top: 0
+			left: 0
+			//width: 760px
+			display: none
+			@media(max-width:1151px)
+				display: block
+				max-width: 760px
+		@media(max-width:1151px)
+			order: 3
+			margin-bottom: 12px
+			padding-top: 5px
+			margin-top: 10px
+			box-sizing: border-box
+		@media(max-width:760px)
+			display: -webkit-box
+			display: -moz-box
+			display: -ms-flexbox
+			display: -webkit-flex
+			display: flex
+			-webkit-box-direction: normal
+			-moz-box-direction: normal
+			-webkit-box-orient: vertical
+			-moz-box-orient: vertical
+			-webkit-flex-direction: column
+			-ms-flex-direction: column
+			flex-direction: column
+			max-height: 90px
+			-webkit-flex-wrap: wrap
+			-ms-flex-wrap: wrap
+			flex-wrap: wrap
+	.phone__box
+		width: $span * 2 +$gutter*1.3
+		//margin-right: 40px
+		.name
+			color: #37383E
+			font-family: $sour
+			font-size: 14px
+			line-height: 20px
+		a
+			font-family: $sour
+			font-size: 18px
+			color: #37383e
+			text-decoration: none
+	.test-rustest-ru
+		width: $span*2+$gutter*3
+		margin-top: 17px
+		font-family: $sour
+		font-size: 18px
+		line-height: 24px
+		a
+			color: $color1
+			border-bottom: 1px solid #0071BC
+			text-decoration: none
+		
+	.rectangle-14
+		height: 48px
+		width: 268px
+		border-radius: 4px
+		margin-top: 5px
+		border: 0
+		background-color: $color1
+		color: #FFFFFF
+		font-family: $sour
+		font-size: 16px
+		font-weight: bold
+		line-height: 22px
+		@media(max-width:1151px)
+			order: 2
+			position: absolute
+			right: 0
+		@media(max-width:760px)
+			position: relative
+			width: 100%
+		img
+			width: 22px
+			height: 15px
+			margin: 3px 0 0 8px
+			float: left

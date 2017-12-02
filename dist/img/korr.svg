@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>korr</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="assets" transform="translate(-80.000000, -1135.000000)">
+            <g id="korr" transform="translate(80.000000, 1135.000000)">
+                <polygon id="Page-1" fill="#CED0D7" points="9.37274725 -4.54747351e-13 0 9.37229943 0 22.6273542 9.37274725 32 22.6275991 32 32 22.6277006 32 9.37195307 22.6275991 -4.54747351e-13"></polygon>
+                <g id="ic_pan_tool_24px" transform="translate(5.000000, 6.000000)">
+                    <g id="Clipped">
+                        <polygon id="a" points="0 0 18 0 18 18 0 18"></polygon>
+                        <path d="M17.25,15 C17.25,16.65 15.9,18 14.25,18 L8.775,18 C7.965,18 7.2,17.6775 6.6375,17.1075 L0.75,11.1225 C1.12499998,10.5 1.7109676,10.1920162 1.725,10.185 C1.89,10.0425 2.0925,9.9675 2.3175,9.9675 C2.4825,9.9675 2.6325,10.0125 2.7675,10.0875 C2.7975,10.095 6,11.9325 6,11.9325 L6,3 C6,2.3775 6.5025,1.875 7.125,1.875 C7.7475,1.875 8.25,2.3775 8.25,3 L8.25,8.25 L9,8.25 L9,1.125 C9,0.5025 9.5025,0 10.125,0 C10.7475,0 11.25,0.5025 11.25,1.125 L11.25,8.25 L12,8.25 L12,1.875 C12,1.2525 12.5025,0.75 13.125,0.75 C13.7475,0.75 14.25,1.2525 14.25,1.875 L14.25,8.25 L15,8.25 L15,4.125 C15,3.5025 15.5025,3 16.125,3 C16.7475,3 17.25,3.5025 17.25,4.125 L17.25,15 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
